@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+<style>
+body{
+	 background-image: url('https://static.vecteezy.com/system/resources/previews/022/967/276/original/the-landscape-of-natural-grass-field-and-trees-with-ai-generated-free-photo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h4{
+	color : red;
+}
+</style>
+</head>
+<body>
+    <h1>Basic Information Form</h1>
+<marquee><h4>Pls Fill the form !!!</h4></marquee>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+<br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="password">Password:</label>
+<br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
